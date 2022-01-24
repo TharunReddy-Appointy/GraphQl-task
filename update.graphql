@@ -1,0 +1,15 @@
+mutation Updaterepo($input: UpdateRepositoryInput!) {
+updateRepository(input:$input) {
+  clientMutationId
+}
+}
+{
+	"input": {
+    "repositoryId": "R_kgDOGulOdQ",
+    "name": "UpdatedfromGraphicql",
+    "description": "Updated from graphql",
+    "clientMutationId": "U_kgDOBdNPqg"
+    
+  }
+  
+}

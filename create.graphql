@@ -1,0 +1,14 @@
+mutation CreateRepository($input: CreateRepositoryInput!) {
+createRepository(input:$input) {
+  clientMutationId
+}
+}
+
+{
+	"input": {
+    "name": "RepofromGraphql",
+    "description": "Reposited created from graphql",
+    "clientMutationId": "U_kgDOBdNPqg",
+    "visibility": "PUBLIC"
+  }
+}

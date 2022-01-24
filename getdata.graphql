@@ -1,0 +1,25 @@
+query GetData($first:Int=10){
+  user(login:"Tharunreddy2725"){
+    name
+    repositories(first:$first){
+      nodes{
+        ...getData
+      }
+    }
+    
+  }
+  
+  
+  
+}
+
+fragment getData on Repository{
+  name,
+  url,
+  collaborators{
+    nodes{
+      name
+    }
+  }
+  
+}
